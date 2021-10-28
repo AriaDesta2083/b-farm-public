@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\RekomendasiController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,5 +26,8 @@ Route::group(['middleware' => ['auth']], function () {
         return view('welcome');
     })->name('home');
 });
+Route::get('rekomendasi', [RekomendasiController::class, 'index'])->name('rekomendasi.index');
 
-require __DIR__.'/auth.php';
+
+
+require __DIR__ . '/auth.php';

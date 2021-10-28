@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="{{ asset('assets/auth/css/style.css') }}">
 
 	</head>
-	<body class="img js-fullheight" style="background-image: url({{ asset('assets/auth/images/bg.jpg') }});">
+	<body class="img js-fullheight" style="background-image: url({{ asset('assets/images/bg_selada.jpg') }});">
 	<section class="ftco-section">
 		<div class="container">
 			<div class="row justify-content-center">

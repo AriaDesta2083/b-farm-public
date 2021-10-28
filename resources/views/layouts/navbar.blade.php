@@ -41,16 +41,15 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-2">
-            <h1 class="my-0 site-logo"><a href="index.html">Brand</a></h1>
+            <h1 class="my-0 site-logo text-nowrap"><a href="index.html">B-Farm</a></h1>
           </div>
           <div class="col-10">
             <nav class="site-navigation text-right" role="navigation">
               <div class="container">
-                <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
-
-                <ul class="site-menu main-menu js-clone-nav d-none d-lg-block">
-                  <li class="active"><a href="#home-section" class="nav-link">Home</a></li>
-                  <li><a href="#classes-section" class="nav-link">Classes</a></li>
+                <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-white "><span class="icon-menu h3"></span></a></div>
+                <ul class="site-menu main-menu js-clone-nav d-none d-lg-block ">
+                  <li class="active"><a href="/" class="nav-link">Home</a></li>
+                  <li><a href="{{ route('rekomendasi.index') }}" class="nav-link">Rekomendasi Menu</a></li>
                   <li class="has-children">
                     <a href="#" class="nav-link">Pages</a>
                     <ul class="dropdown arrow-top">
@@ -72,7 +71,7 @@
                   <li><a href="#contact-section" class="nav-link">Contact</a></li>
                   @if (auth()->user() != null)
                   <li class="has-children">
-                    <a href="#" class="nav-link">{{ auth()->user()->name }}</a>
+                    <a href="#" class="nav-link"><span class="bg-primary p-2"> {{ auth()->user()->name }}</span></a>
                     <ul class="dropdown arrow-top">
                       <li>
                         <form action="{{ route('logout') }}" method="post">
