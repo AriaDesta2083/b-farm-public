@@ -27,6 +27,7 @@ Route::group(['middleware' => ['auth']], function () {
     })->name('home');
 });
 Route::get('rekomendasi', [RekomendasiController::class, 'index'])->name('rekomendasi.index');
+Route::get('rekomendasi/{id}', [RekomendasiController::class, 'show'])->name('rekomendasi.show');
 
 
 
