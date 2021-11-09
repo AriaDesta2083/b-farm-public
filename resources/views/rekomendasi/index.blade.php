@@ -5,6 +5,7 @@
     <center class="my-4">
         <h2>Rekomendasi Menu</h2>
     </center>
+    @if (isset($response->data))
     @foreach ($response->data as $item)
     <a href="{{ route('rekomendasi.show', $item->id) }}">
         <div class="row border border-success rounded bg-primary mx-2 my-2">
@@ -17,5 +18,8 @@
         </div>
     </a>
     @endforeach
+    @else
+    <p>Belum ada data.</p>
+    @endif
 </div>    
 @endsection
