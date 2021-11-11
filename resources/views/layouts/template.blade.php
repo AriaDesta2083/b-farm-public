@@ -48,7 +48,7 @@ img.emoji {
 <link rel='stylesheet' id='prisna-social-counter-css' href='https://demo.colorlib.com/illdy/wp-content/plugins/social-counter/styles/prisna-social-counter.css?ver=5.8.1' type='text/css' media='all' />
 <link rel='stylesheet' id='icomoon-css' href='https://demo.colorlib.com/illdy/wp-content/plugins/kiwi-social-share/assets/vendors/icomoon/style.css?ver=2.1.4' type='text/css' media='all' />
 <link rel='stylesheet' id='illdy-pace-css' href='https://demo.colorlib.com/illdy/wp-content/themes/illdy/layout/css/pace.min.css?ver=5.8.1' type='text/css' media='all' />
-<link rel='stylesheet' id='bootstrap-css' href='https://demo.colorlib.com/illdy/wp-content/themes/illdy/layout/css/bootstrap.min.css?ver=3.3.6' type='text/css' media='all' />
+{{--  <link rel='stylesheet' id='bootstrap-css' href='https://demo.colorlib.com/illdy/wp-content/themes/illdy/layout/css/bootstrap.min.css?ver=3.3.6' type='text/css' media='all' />  --}}
 <link rel='stylesheet' id='bootstrap-theme-css' href='https://demo.colorlib.com/illdy/wp-content/themes/illdy/layout/css/bootstrap-theme.min.css?ver=3.3.6' type='text/css' media='all' />
 <link rel='stylesheet' id='font-awesome-css' href='https://demo.colorlib.com/illdy/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css?ver=4.7.0' type='text/css' media='all' />
 <link rel='stylesheet' id='owl-carousel-css' href='https://demo.colorlib.com/illdy/wp-content/themes/illdy/layout/css/owl-carousel.min.css?ver=2.0.0' type='text/css' media='all' />
@@ -83,11 +83,13 @@ var paceOptions = {"restartOnRequestAfter":"0","restartOnPushState":"0"};
   </head>
   <body class="home page-template-default page page-id-126 wp-custom-logo elementor-default elementor-kit-297">
 
-    @include('layouts.navbar')
+    @include('layouts.header')
 
     @yield('content')
   
     @include('auth.login-modal')
+
+    @include('layouts.footer')
 
     <script src="{{ asset('assets/js/jquery-3.3.1.min.js') }}"></script>
     <script src="{{ asset('assets/js/popper.min.js') }}"></script>
@@ -97,56 +99,56 @@ var paceOptions = {"restartOnRequestAfter":"0","restartOnPushState":"0"};
 
     <!-- Front Script -->
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-  <script type='text/javascript' src='https://demo.colorlib.com/illdy/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.7' id='regenerator-runtime-js'></script>
-  <script type='text/javascript' src='https://demo.colorlib.com/illdy/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
-  <script type='text/javascript' id='contact-form-7-js-extra'>
-    /* 
-    <![CDATA[ */
-    var wpcf7 = {
-      "api": {
-        "root": "https:\/\/demo.colorlib.com\/illdy\/wp-json\/",
-        "namespace": "contact-form-7\/v1"
-      },
-      "cached": "1"
-    };
-    /* ]]> */
-  </script>
-  <script type='text/javascript' src='https://demo.colorlib.com/illdy/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.5.2' id='contact-form-7-js'></script>
-  <script type='text/javascript' src='https://demo.colorlib.com/illdy/wp-includes/js/jquery/ui/core.min.js?ver=1.12.1' id='jquery-ui-core-js'></script>
-  <script type='text/javascript' src='https://demo.colorlib.com/illdy/wp-includes/js/jquery/ui/progressbar.min.js?ver=1.12.1' id='jquery-ui-progressbar-js'></script>
-  <script type='text/javascript' src='https://demo.colorlib.com/illdy/wp-content/themes/illdy/layout/js/bootstrap/bootstrap.min.js?ver=3.3.6' id='illdy-bootstrap-js'></script>
-  <script type='text/javascript' src='https://demo.colorlib.com/illdy/wp-content/themes/illdy/layout/js/owl-carousel/owl-carousel.min.js?ver=2.0.0' id='illdy-owl-carousel-js'></script>
-  <script type='text/javascript' src='https://demo.colorlib.com/illdy/wp-content/themes/illdy/layout/js/count-to/count-to.min.js?ver=5.8.1' id='illdy-count-to-js'></script>
-  <script type='text/javascript' src='https://demo.colorlib.com/illdy/wp-content/themes/illdy/layout/js/visible/visible.min.js?ver=5.8.1' id='illdy-visible-js'></script>
-  <script type='text/javascript' src='https://demo.colorlib.com/illdy/wp-content/themes/illdy/layout/js/parallax/parallax.min.js?ver=1.0.16' id='illdy-parallax-js'></script>
-  <script type='text/javascript' src='https://demo.colorlib.com/illdy/wp-content/themes/illdy/layout/js/plugins.min.js?ver=1.0.16' id='illdy-plugins-js'></script>
-  <script type='text/javascript' src='https://demo.colorlib.com/illdy/wp-content/themes/illdy/layout/js/scripts.js?ver=1.0.16' id='illdy-scripts-js'></script>
-  <script type='text/javascript' id='illdy-scripts-js-after'>
-    if (jQuery('.blog-carousel > .illdy-blog-post').length > 3) {
-      jQuery('.blog-carousel').owlCarousel({
-            'items': 3,
-            'loop': true,
-            'dots': false,
-            'nav': true,
-            'navText': [' < i class = "fa fa-angle-left"
-                aria - hidden = "true" > < /i>',' < i class = "fa fa-angle-right"
-                aria - hidden = "true" > < /i>'], responsive : { 0 : { items : 1 }, 480 : { items : 2 }, 900 : { items : 3 } }});}
-  </script>
-  <script type='text/javascript' src='https://demo.colorlib.com/illdy/wp-includes/js/wp-embed.min.js?ver=5.8.1' id='wp-embed-js'></script>
-  <script>
-    window.GA_ID = 'G-SEKJ4E9T4H'
-  </script>
-  <script src='https://demo.colorlib.com/illdy/wp-content/plugins/flying-analytics/js/gtagv4.js' defer></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
+    <script type='text/javascript' src='https://demo.colorlib.com/illdy/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.7' id='regenerator-runtime-js'></script>
+    <script type='text/javascript' src='https://demo.colorlib.com/illdy/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+    <script type='text/javascript' id='contact-form-7-js-extra'>
+      /* 
+      <![CDATA[ */
+      var wpcf7 = {
+        "api": {
+          "root": "https:\/\/demo.colorlib.com\/illdy\/wp-json\/",
+          "namespace": "contact-form-7\/v1"
+        },
+        "cached": "1"
+      };
+      /* ]]> */
+    </script>
+    <script type='text/javascript' src='https://demo.colorlib.com/illdy/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.5.2' id='contact-form-7-js'></script>
+    <script type='text/javascript' src='https://demo.colorlib.com/illdy/wp-includes/js/jquery/ui/core.min.js?ver=1.12.1' id='jquery-ui-core-js'></script>
+    <script type='text/javascript' src='https://demo.colorlib.com/illdy/wp-includes/js/jquery/ui/progressbar.min.js?ver=1.12.1' id='jquery-ui-progressbar-js'></script>
+    <script type='text/javascript' src='https://demo.colorlib.com/illdy/wp-content/themes/illdy/layout/js/bootstrap/bootstrap.min.js?ver=3.3.6' id='illdy-bootstrap-js'></script>
+    <script type='text/javascript' src='https://demo.colorlib.com/illdy/wp-content/themes/illdy/layout/js/owl-carousel/owl-carousel.min.js?ver=2.0.0' id='illdy-owl-carousel-js'></script>
+    <script type='text/javascript' src='https://demo.colorlib.com/illdy/wp-content/themes/illdy/layout/js/count-to/count-to.min.js?ver=5.8.1' id='illdy-count-to-js'></script>
+    <script type='text/javascript' src='https://demo.colorlib.com/illdy/wp-content/themes/illdy/layout/js/visible/visible.min.js?ver=5.8.1' id='illdy-visible-js'></script>
+    <script type='text/javascript' src='https://demo.colorlib.com/illdy/wp-content/themes/illdy/layout/js/parallax/parallax.min.js?ver=1.0.16' id='illdy-parallax-js'></script>
+    <script type='text/javascript' src='https://demo.colorlib.com/illdy/wp-content/themes/illdy/layout/js/plugins.min.js?ver=1.0.16' id='illdy-plugins-js'></script>
+    <script type='text/javascript' src='https://demo.colorlib.com/illdy/wp-content/themes/illdy/layout/js/scripts.js?ver=1.0.16' id='illdy-scripts-js'></script>
+    <script type='text/javascript' id='illdy-scripts-js-after'>
+      if (jQuery('.blog-carousel > .illdy-blog-post').length > 3) {
+        jQuery('.blog-carousel').owlCarousel({
+              'items': 3,
+              'loop': true,
+              'dots': false,
+              'nav': true,
+              'navText': [' < i class = "fa fa-angle-left"
+                  aria - hidden = "true" > < /i>',' < i class = "fa fa-angle-right"
+                  aria - hidden = "true" > < /i>'], responsive : { 0 : { items : 1 }, 480 : { items : 2 }, 900 : { items : 3 } }});}
+    </script>
+    <script type='text/javascript' src='https://demo.colorlib.com/illdy/wp-includes/js/wp-embed.min.js?ver=5.8.1' id='wp-embed-js'></script>
+    <script>
+      window.GA_ID = 'G-SEKJ4E9T4H'
+    </script>
+    <script src='https://demo.colorlib.com/illdy/wp-content/plugins/flying-analytics/js/gtagv4.js' defer></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-SEKJ4E9T4H');
-  </script>
-  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"6ab5beca027a469d","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.10.0","si":100}'></script>
-  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"6ab5bec96a62469d","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.10.0","si":100}'></script>
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-SEKJ4E9T4H');
+    </script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"6ab5beca027a469d","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.10.0","si":100}'></script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"6ab5bec96a62469d","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.10.0","si":100}'></script>   
   </body>
 </html>
