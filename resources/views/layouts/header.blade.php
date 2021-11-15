@@ -1,11 +1,11 @@
 <div class="pace-overlay"></div>
-  <header id="header" class="header-front-page" style="background-image: url(https://demo.colorlib.com/illdy/wp-content/themes/illdy/layout/images/front-page/front-page-header.jpg);background-attachment: fixed;">
+  <header id="header" class="header-front-page" style="background-image: url({{ asset('assets/images/bg_selada.png') }});background-attachment: fixed;">
     <div class="top-header">
       <div class="container">
         <div class="row">
           <div class="col-sm-4 col-xs-8">
             <a href="/" title="Illdy Theme Demo">
-              <img class="header-logo-img" src="https://demo.colorlib.com/illdy/wp-content/uploads/sites/58/2016/03/cropped-footer-logo-1.png" width="" />
+              {{-- <img class="header-logo-img" src="https://demo.colorlib.com/illdy/wp-content/uploads/sites/58/2016/03/cropped-footer-logo-1.png" width="" /> --}}
             </a>
           </div>
           <div class="col-sm-8 col-xs-4">
@@ -86,12 +86,12 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
-            <h1>Clean <span class="span-dot">.</span>Slick <span class="span-dot">.</span>Pixel Perfect </h1>
+            <h2 class="text-nowrap">EXPERT CARES FOR YOUR HEALTH</h2>
           </div>
           <div class="col-sm-8 col-sm-offset-2">
-            <div class="section-description">lldy is a great one-page theme, perfect for developers and designers but also for someone who just wants a new website for his business. Try it now!</div>
-            <a href="https://colorlib.com/wp/themes/illdy/" title="Learn more" class="header-button-one">Learn more</a>
-            <a href="https://colorlib.com/wp/themes/illdy/" title="Download" class="header-button-two">Download</a>
+            <div class="section-description">Membantu menjaga kesehatanmu dengan mengkonsumsi sayuran  yang bebas hama dan pestisida.</div>
+            <a href="/" title="Learn more" class="header-button-one">Learn more</a>
+            <a href="/" title="Download" class="header-button-two">Bergabung</a>
           </div>
         </div>
       </div>
