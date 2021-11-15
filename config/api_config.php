@@ -2,7 +2,7 @@
 
 /* Api Configuration */
 
-$domain = 'http://127.0.0.1:8000/';
+$domain = 'http://127.0.0.1:8002/';
 $base_url = $domain.'api/';
 
 return [

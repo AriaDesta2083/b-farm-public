@@ -55,14 +55,17 @@ img.emoji {
 <link rel='stylesheet' id='illdy-main-css' href='https://demo.colorlib.com/illdy/wp-content/themes/illdy/layout/css/main.css?ver=5.8.1' type='text/css' media='all' />
 <link rel='stylesheet' id='illdy-custom-css' href='https://demo.colorlib.com/illdy/wp-content/themes/illdy/layout/css/custom.css?ver=5.8.1' type='text/css' media='all' />
 <link rel='stylesheet' id='illdy-style-css' href='https://demo.colorlib.com/illdy/wp-content/themes/illdy/style.css?ver=1.0.16' type='text/css' media='all' />
+
 <script type='text/javascript' src='https://demo.colorlib.com/illdy/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
 <script type='text/javascript' src='https://demo.colorlib.com/illdy/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+
 <script type='text/javascript' id='illdy-pace-js-extra'>
 /* <![CDATA[ */
 var paceOptions = {"restartOnRequestAfter":"0","restartOnPushState":"0"};
 /* ]]> */
 </script>
 <script type='text/javascript' src='https://demo.colorlib.com/illdy/wp-content/themes/illdy/layout/js/pace/pace.min.js?ver=5.8.1' id='illdy-pace-js'></script>
+
 <link rel="https://api.w.org/" href="https://demo.colorlib.com/illdy/wp-json/" /><link rel="alternate" type="application/json" href="https://demo.colorlib.com/illdy/wp-json/wp/v2/pages/126" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://demo.colorlib.com/illdy/xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://demo.colorlib.com/illdy/wp-includes/wlwmanifest.xml" />
 <meta name="generator" content="WordPress 5.8.1" />
@@ -78,6 +81,7 @@ var paceOptions = {"restartOnRequestAfter":"0","restartOnPushState":"0"};
 <style type="text/css" id="illdy-services-section-css"></style>
 <style type="text/css" id="illdy-team-section-css">#team:before {background-image: url(https://demo.colorlib.com/illdy/wp-content/themes/illdy/layout/images/front-page/pattern.png) !important;}#team:before {background-size: auto !important;}#team:before {background-repeat: repeat !important;}</style>
 <style type="text/css" id="illdy-testimonials-section-css">#testimonials:before {background-image: url(https://demo.colorlib.com/illdy/wp-content/themes/illdy/layout/images/testiomnials-background.jpg) !important;}#testimonials:before {background-attachment: scroll !important;}</style>
+@stack('css')
 
     <title>B-Farm</title>
   </head>
@@ -96,7 +100,8 @@ var paceOptions = {"restartOnRequestAfter":"0","restartOnPushState":"0"};
     <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('assets/js/jquery.sticky.js') }}"></script>
     <script src="{{ asset('assets/js/main.js') }}"></script>
-
+    @stack('js')
+{{--  
     <!-- Front Script -->
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script type='text/javascript' src='https://demo.colorlib.com/illdy/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.7' id='regenerator-runtime-js'></script>
@@ -150,5 +155,6 @@ var paceOptions = {"restartOnRequestAfter":"0","restartOnPushState":"0"};
     </script>
     <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"6ab5beca027a469d","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.10.0","si":100}'></script>
     <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"6ab5bec96a62469d","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.10.0","si":100}'></script>   
+      --}}
   </body>
 </html>
