@@ -101,6 +101,8 @@ var paceOptions = {"restartOnRequestAfter":"0","restartOnPushState":"0"};
     <script src="{{ asset('assets/js/jquery.sticky.js') }}"></script>
     <script src="{{ asset('assets/js/main.js') }}"></script>
     @stack('js')
+    {{-- <script type='text/javascript' src='https://demo.colorlib.com/illdy/wp-content/themes/illdy/layout/js/scripts.js?ver=1.0.16' id='illdy-scripts-js'></script> --}}
+     
 {{--  
     <!-- Front Script -->
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>

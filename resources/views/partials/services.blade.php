@@ -17,10 +17,10 @@
             <div id="illdy_service-2" class="col-sm-4 widget_illdy_service">
             <div class="service" data-service-color="#f18b6d">
                 <div class="service-icon">
-                <i class="fa fa-truck"></i>
+                <i class="fa fa-truck" style="color: #f18b6d;"></i>
                 </div>
                 <div class="service-title">
-                <h5>Pengantaran</h5>
+                <h5 style="color: #f18b6d;">Pengantaran</h5>
                 </div>
                 <div class="service-entry">Consectetur adipiscing elit. Praesent molestie urna hendrerit erat tincidunt tempus. Aliquam a leo risus. Fusce a metus non augue dapibus porttitor at in mauris. Pellentesque commodo...</div>
             </div>
@@ -28,10 +28,10 @@
             <div id="illdy_service-3" class="col-sm-4 widget_illdy_service">
             <div class="service" data-service-color="#f1d204">
                 <div class="service-icon">
-                <i class="fa fa-leaf"></i>
+                <i class="fa fa-leaf" style="color: #f1d204;"></i>
                 </div>
                 <div class="service-title">
-                <h5>Produk Fresh</h5>
+                <h5 style="color: #f1d204;">Produk Fresh</h5>
                 </div>
                 <div class="service-entry">Consectetur adipiscing elit. Praesent molestie urna hendrerit erat tincidunt tempus. Aliquam a leo risus. Fusce a metus non augue dapibus porttitor at in mauris. Pellentesque commodo...</div>
             </div>
@@ -39,10 +39,10 @@
             <div id="illdy_service-4" class="col-sm-4 widget_illdy_service">
             <div class="service" data-service-color="#6a4d8a">
                 <div class="service-icon">
-                <i class="fa fa-book"></i>
+                <i class="fa fa-book" style="color: #96CB6D;"></i>
                 </div>
                 <div class="service-title">
-                <h5>Rekomendasi Menu</h5>
+                <h5 style="color: #96CB6D;">Rekomendasi Menu</h5>
                 </div>
                 <div class="service-entry">Consectetur adipiscing elit. Praesent molestie urna hendrerit erat tincidunt tempus. Aliquam a leo risus. Fusce a metus non augue dapibus porttitor at in mauris. Pellentesque commodo...</div>
             </div>
@@ -51,3 +51,4 @@
         </div>
     </div>
 </section>
+

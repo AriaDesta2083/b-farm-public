@@ -159,15 +159,17 @@
             <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="9000">
               <div class="carousel-inner row w-100 mx-auto" role="listbox">
                 @foreach ($data as $item)
-                  <div class="carousel-item col-md-3 {{ $loop->iteration == 1 ? 'active' : '' }}">
-                      <div class="card" style="width: 100%;">
-                        <img class="card-img-top" src="https://demo.colorlib.com/illdy/wp-content/uploads/sites/58/2016/02/photo-1447687643809-e05fd462f350-360x213.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">{{ $item->judul_menu }}</h5>
-                          <p class="card-text">{{ substr($item->bahan, 0, 40).'...' }}</p>
-                          <a href="{{ url('/rekomendasi').'/'.$item->id }}" class="btn btn-primary">Selengkapnya</a>
-                        </div>
-                      </div>
+                  <div class="carousel-item col-md-4 col-sm-6 col-xs-12 {{ $loop->iteration == 1 ? 'active' : '' }}">
+                      <div class="post" style="
+                      ">
+                      <div class="post-image" style="background-image: url('http://b-farm.test/{{ $item->gambar }}');"></div>    
+                      <h5>
+                        <a href="{{ url('/rekomendasi').'/'.$item->id }}" title="{{ $item->judul_menu }}" class="post-title">{{ $item->judul_menu }}</a>
+                      </h5>
+                      <div class="post-entry">{{ substr($item->bahan, 0, 40)}}.&hellip; </div>
+                      <a href="{{ url('/rekomendasi').'/'.$item->id }}" title="Read more" class="post-button">
+                        <i class="fa fa-chevron-circle-right"></i>Read more </a>
+                    </div>
                   </div>
                 @endforeach
               </div>
