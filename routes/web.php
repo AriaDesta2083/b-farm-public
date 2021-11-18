@@ -22,6 +22,8 @@ Route::post('daftar', [UserController::class, 'register'])->name('user.register'
 
 Route::group(['middleware' => ['auth']], function () {
     Route::get('/home', [HomeController::class, 'index'])->name('home');
+    Route::get('/profile', [HomeController::class, 'profile'])->name('profile.index');
+    Route::put('/profile/{id}', [HomeController::class, 'updateProfile'])->name('profile.update');
 });
 Route::post('ulasan', [HomeController::class, 'storeUlasan'])->name('ulasan.store');
 Route::get('rekomendasi', [RekomendasiController::class, 'index'])->name('rekomendasi.index');

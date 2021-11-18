@@ -40,9 +40,12 @@
                     {{ auth()->user()->name }}
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <form action="{{ route('logout') }}" method="post">
-                      @csrf
-                      <button class="nav-link btn-sm btn-logout w-100" type="submit">Logout</button>
+                      <a href="{{ route('profile.index') }}">
+                        <button  class="nav-link btn-sm btn-logout w-100" type="submit">Profile</button>
+                      </a>
+                      <form action="{{ route('logout') }}" method="post">
+                        @csrf
+                        <button class="nav-link btn-sm btn-logout w-100" type="submit">Logout</button>
                     </form>
                   </div>
                 </li>

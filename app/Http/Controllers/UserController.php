@@ -22,8 +22,10 @@ class UserController extends Controller
         $newCustomer = new User;
         $newCustomer->name = $request->name;
         $newCustomer->email = $request->email;
+        $newCustomer->alamat = $request->alamat;
         $newCustomer->phone = $request->phone;
         $newCustomer->password = \Hash::make($request->password);
+        $newCustomer->role = 'Customer';
 
         $newCustomer->save();
         Auth::login($newCustomer);

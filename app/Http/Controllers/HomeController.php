@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Rekomendasi;
 use App\Models\Ulasan;
+use App\Models\User;
 use App\Models\WebProfile;
 use Illuminate\Http\Request;
 
@@ -44,5 +45,31 @@ class HomeController extends Controller
         else {
             return view('auth.login');
         }
+    }
+
+    public function profile()
+    {
+        $profile = User::find(auth()->user()->id);
+
+        $data = array(
+            'data' => $profile
+        );
+
+        return view('profile.index', $data);
+    }
+
+    public function updateProfile($id, Request $request)
+    {
+        $profile = User::find($id);
+
+        $profile->name = $request->nama;
+        $profile->email = $request->email;
+        $profile->alamat = $request->alamat;
+        $profile->phone = $request->phone;
+        $profile->password = $request->password;
+
+        $profile->save();
+
+        return back();
     }
 }
