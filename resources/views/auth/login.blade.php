@@ -24,6 +24,12 @@
 				<div class="col-md-6 col-lg-4">
 					<div class="login-wrap p-0">
 						<h3 class="mb-4 text-center">Sudah punya akun?</h3>
+						<!-- Session Status -->
+						<x-auth-session-status class="mb-4 text-danger" :status="session('status')" />
+				
+						<!-- Validation Errors -->
+						<x-auth-validation-errors class="mb-4 text-danger" :errors="$errors" />
+				
 						<form action="{{ route('login') }}" class="signin-form" method="POST">
 							@csrf
 							<div class="form-group">

@@ -90,7 +90,15 @@ var paceOptions = {"restartOnRequestAfter":"0","restartOnPushState":"0"};
     @include('layouts.header')
 
     @yield('content')
-  
+
+    @if(sizeof($errors))
+    @push('js')
+      <script>
+      $('#loginModal').modal('show')
+      </script>
+    @endpush
+    @endif
+
     @include('auth.login-modal')
 
     @include('layouts.footer')

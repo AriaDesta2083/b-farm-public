@@ -10,15 +10,19 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                          <div class="form-group">
-                              <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
-                          </div>
-                        <div class="form-group">
-                            <input id="password-field" type="password" name="password" class="form-control" placeholder="Password" required>
-                        </div>
-                        <br>
-                        Belum punya akun? <a href="{{ route('register') }}">klik disini.</a>
-                    </form>
+                  <!-- Session Status -->
+                  <x-auth-session-status class="mb-4 text-danger" :status="session('status')" />
+              
+                  <!-- Validation Errors -->
+                  <x-auth-validation-errors class="mb-4 text-danger" :errors="$errors" />
+                  <div class="form-group">
+                      <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
+                  </div>
+                  <div class="form-group">
+                      <input id="password-field" type="password" name="password" class="form-control" placeholder="Password" required>
+                  </div>
+                  <br>
+                  Belum punya akun? <a href="{{ route('register') }}">klik disini.</a>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
