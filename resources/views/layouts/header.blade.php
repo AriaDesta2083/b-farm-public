@@ -15,7 +15,7 @@
                   <a href="/">Home</a>
                 </li>
                 <li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-17">
-                  <a href="{{ route('rekomendasi.index') }}">Rekomendasi Menu</a>
+                  <a href="#latest-news">Rekomendasi Menu</a>
                 </li>
                 <li id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-18">
                   <a href="#about">About</a>
