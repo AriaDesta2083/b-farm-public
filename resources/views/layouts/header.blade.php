@@ -93,9 +93,14 @@
           </div>
           <div class="col-sm-8 col-sm-offset-2">
             <div class="section-description">Membantu menjaga kesehatanmu dengan mengkonsumsi sayuran  yang bebas hama dan pestisida.</div>
-            <a href="/" title="Learn more" class="header-button-one">Learn more</a>
-            <a href="/" title="Download" class="header-button-two">Bergabung</a>
           </div>
+        </div>
+        <div class="row d-flex justify-content-start">
+          <div class="col">
+            <a href="{{ route('register') }}" title="Download" class="header-button-two">Bergabung</a>
+          </div>
+          <div class="col"></div>
+          <div class="col"></div>
         </div>
       </div>
     </div>
