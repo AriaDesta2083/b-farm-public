@@ -5,3 +5,7 @@
       </p>
     </div>
 </div>
+
+<button class="kc_fab_main_btn">
+  <span class="fa fa-phone"></span>
+</button>

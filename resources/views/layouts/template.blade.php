@@ -42,6 +42,29 @@ img.emoji {
 	background: none !important;
 	padding: 0 !important;
 }
+
+.kc_fab_main_btn {
+  float: right;
+  background-color: #F44336;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background: #54d82c;
+  border: none;
+  outline: none;
+  color: #FFF;
+  font-size: 36px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: .3s;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.kc_fab_main_btn:focus {
+  transform: scale(1.1);
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
 </style>
 <link rel='stylesheet' id='wp-block-library-css' href='https://demo.colorlib.com/illdy/wp-includes/css/dist/block-library/style.min.css?ver=5.8.1' type='text/css' media='all' />
 <link rel='stylesheet' id='contact-form-7-css' href='https://demo.colorlib.com/illdy/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.5.2' type='text/css' media='all' />

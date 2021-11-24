@@ -159,7 +159,7 @@
             <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="9000">
               <div class="carousel-inner row w-100 mx-auto" role="listbox">
                 @foreach ($data as $item)
-                  <div class="carousel-item col-md-4 col-sm-6 col-xs-12 {{ $loop->iteration == 1 ? 'active' : '' }}">
+                  <div class="carousel-item col-md-4 col-sm-6 col-xs-12 mb-4 {{ $loop->iteration == 1 ? 'active' : '' }}">
                       <div class="post" style="
                       ">
                       <div class="post-image" style="background-image: url('http://b-farm.test/{{ $item->gambar }}');"></div>    
@@ -182,7 +182,6 @@
         </div>        
       </div>
     </div>
-  </div>
 </section>
 
 @push('js')

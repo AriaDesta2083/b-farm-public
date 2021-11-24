@@ -34,7 +34,7 @@
                   <a href="{{ 'https://www.instagram.com/'.$profile->ig }}" title="Instagram" target="_blank">
                     <i class="fa fa-instagram"></i>
                   </a>
-                  <a href="{{ $profile->link_wa }}" title="Whatsapp" target="_blank">
+                  <a href="https://wa.me/{{ $profile->link_wa }}" title="Whatsapp" target="_blank">
                     <i class="fa fa-whatsapp"></i>
                   </a>
                 </div>

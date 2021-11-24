@@ -160,9 +160,6 @@
                 <div class="carousel-item col-md-3 {{ $loop->iteration == 1 ? 'active' : '' }}">
                   <div class="row">
                     <div class="col">
-                      <img src="https://demo.colorlib.com/illdy/wp-content/themes/illdy/layout/images/front-page/front-page-team-3.jpg" class="rounded-circle" alt="John Smith" title="John Smith" />
-                    </div>
-                    <div class="col">
                       <b class="h4">{{ $item->name }}</b>
                       <label class="text-red-400">{{ $item->email }}</label>
                       <span>{{ $item->subjek }}</span>
