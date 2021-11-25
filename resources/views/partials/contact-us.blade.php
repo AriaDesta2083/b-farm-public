@@ -45,3 +45,20 @@
       </div>
     </div>
 </section>
+
+
+<div style="position: fixed; bottom:5%; right:5%; z-index: 1;">
+
+<a href="https://wa.me/{{ $profile->link_wa }}" class="btn btn-lg mb-2 text-light text-nowrap blockquote" style="background-color: #8ccc5b;">
+  <i class="fa fa-whatsapp"></i>
+  Order Whatsapp
+</a>
+
+<br>
+
+<a href="https://www.instagram.com/{{ $profile->ig }}" class="btn btn-lg text-light text-nowrap blockquote" style="background-color: #ee7c5a;">
+  <i class="fa fa-instagram"></i>
+  Order Instagram
+</a>
+
+</div>
