@@ -20,9 +20,6 @@
                 <li id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-18">
                   <a href="#about">About</a>
                 </li>
-                <li id="menu-item-19" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-19">
-                  <a href="#projects">Events</a>
-                </li>
                 <li id="menu-item-20" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-20">
                   <a href="#contact-us">Contact</a>
                 </li>
@@ -96,12 +93,14 @@
           </div>
         </div>
         <div class="row d-flex justify-content-start">
+          @if (auth()->user() == null)
           <div class="col">
             <a href="{{ route('register') }}" title="Download" class="header-button-two">Bergabung</a>
           </div>
+          @endif
           <div class="col"></div>
           <div class="col"></div>
         </div>
       </div>
     </div>
-  </header>
+</header>
